@@ -4,4 +4,13 @@
 {% endblock title %}
 
 {% block content %}
+<ul>
+<li><h1>{{object.job_title}}</h1></li>
+<li><small>{{object.company}}</small></li>
+<li><small>{{object.post_date}}</small></li>
+<li><small>{{object.closing_date}}</small></li>
+<li><small>{{object.location}}</small></li>
+<li><p>{{object.details}}</p></li>
+</ul>
+
 {% endblock content %}

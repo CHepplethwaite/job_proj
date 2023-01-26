@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from .models import job
+from django.urls import reverse_lazy
 
 def home(request):
     return render(request,'job_app/index.html',{})
@@ -38,3 +39,4 @@ class jobDetailView(DetailView):
 
 class jobListView(ListView):
     model = job
+
