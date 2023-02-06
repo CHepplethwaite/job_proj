@@ -12,5 +12,5 @@ urlpatterns =[
     path('post_job/', job_views.post_job, name="post_job"),
     path('recruitment/', job_views.recruitment, name="recruitment"),
     path('submit_resume/', job_views.submit_resume, name="submit_resume"),
-    path('<int:pk>/', job_views.jobDetailView.as_view(template_name="job_detail.html"), name="job-detail"),
+    path('<slug:slug>/', job_views.jobDetailView.as_view(),name="job-detail"),
 ]
